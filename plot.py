@@ -20,10 +20,7 @@ label_idx = 1
 
 for i in range(5):
     print(data[training_idx][image_idx][i].shape)
-    d = data[training_idx][image_idx][i]
-    d_ = np.reshape(d, [28, 28, 1])
     
-
-    plt.imshow(data[training_idx][image_idx][i])
+    plt.imshow(data[training_idx][image_idx][i][0])
     print(data[training_idx][1][label_idx])
     plt.show()
